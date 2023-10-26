@@ -9,10 +9,10 @@ def main():
     print("3. Quit")
     print("")
     # ask for user input
-    user_option = int(input("Please enter an option: "))
     running = True
     # encode option
     while running:
+        user_option = int(input("Please enter an option: "))
         if user_option == 1:
             password = input("Please enter your password to encode: ")
             encoded_password = encode(password)
@@ -44,6 +44,7 @@ def decode(password):
         decoded_digit = str(int(digit) - 3)
         decoded_password = decoded_password + decoded_digit
     return decoded_password
+# Brian Delaney decode function.
 # Function uses a for loop to go character by character in the encoded password, convert it to a digit and subtracts
 # 3 from it, then converts it back into a string and concatenates it to the full decoded password.
 
