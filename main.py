@@ -16,11 +16,11 @@ def main():
         if user_option == 1:
             password = input("Please enter your password to encode: ")
             encoded_password = encode(password)
-            print("Your password has been encoded and stored")
+            print("Your password has been encoded and stored!\n")
         # decode option
         elif user_option == 2:
             decoded_password = decode(encoded_password)
-            print(f"The encoded password is {encoded_password}, and the decoded password is {decoded_password}.")
+            print(f"The encoded password is {encoded_password}, and the decoded password is {decoded_password}.\n")
         # quit option
         else:
             quit()
