@@ -1,26 +1,26 @@
 # ilani seguinot
 def main():
     encoded_password = ""
-    # print menu options
-    print("Menu")
-    print("------------")
-    print("1. Encode")
-    print("2. Decode")
-    print("3. Quit")
-    print("")
-    # ask for user input
     running = True
     # encode option
     while running:
+        print("Menu")
+        print("------------")
+        print("1. Encode")
+        print("2. Decode")
+        print("3. Quit")
+        print("")
+        # print menu options
         user_option = int(input("Please enter an option: "))
+        # ask for user input
         if user_option == 1:
             password = input("Please enter your password to encode: ")
             encoded_password = encode(password)
             print("Your password has been encoded and stored")
         # decode option
         elif user_option == 2:
-            decode(encoded_password)
-            print(f"The encoded password is ")
+            decoded_password = decode(encoded_password)
+            print(f"The encoded password is {encoded_password}, and the decoded password is {decoded_password}.")
         # quit option
         else:
             quit()
